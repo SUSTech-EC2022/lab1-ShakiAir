@@ -61,7 +61,7 @@ for i = 1:populationSize
     % mutation method
     %offspring(i,:) = Uniform_Mutation(offspring(i,:),mutation_rate, lower_bound, upper_bound);
     offspring(i,:) = Cauchy_Mutation(offspring(i,:), lower_bound, upper_bound,step_size);
-    %offspring(i,:) = offspring(i,:) + Guassian_Mutation(offspring(i,:), lower_bound, upper_bound,step_size);
+    %offspring(i,:) = Guassian_Mutation(offspring(i,:), lower_bound, upper_bound,step_size);
     
 
     offspring_fitness(i) = objective(offspring(i,:));
